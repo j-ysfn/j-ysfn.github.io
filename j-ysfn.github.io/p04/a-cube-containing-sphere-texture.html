@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+	</head>
+  <body>
+	<!-- <script src="../js/aframe.min.js"></script> -->
+    <a-scene>
+      <!-- <a-sphere  id="PGB sphere" position="0 2 -1.5" radius="1" rotation="0 0 0" color="blue"></a-sphere> -->
+	  <a-assets>
+			<img id="mars" src="./IMAGES/mars-surface.avif" crossorigin="anonymous">
+	  </a-assets>
+	  	<a-sphere src="#mars" position="0 1.25 -5" radius="1.25" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+	  </a-sphere>
+							 
+		<a-box	id="PGB Box" 
+				position="0 2 -5.5"
+				
+				transparent="true"
+				blending="additive"
+				color="gray"></a-box>
+							 
+    </a-scene>
+  </body>
+</html>
+
+<!-- "additive" subtractive none multiply normal -->
